@@ -216,7 +216,6 @@ pub async fn test_internal_items() {
 
 pub async fn test_unimplemented() {
     #[async_trait]
-    #[allow(unreachable_code)]
     pub trait Trait {
         async fn f() {
             unimplemented!()
