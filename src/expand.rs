@@ -308,6 +308,7 @@ fn transform_block(
         Box::pin(async move {
             let __ret: #ret_ty = {
                 #(#decls)*
+                let __async_trait: ();
                 #(#stmts)*
             };
 
